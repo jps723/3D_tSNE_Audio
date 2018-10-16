@@ -8,8 +8,8 @@
 struct AudioClip {
 public:
     ofSoundPlayer sound;
-    ofPoint point;
- 
+    ofNode point;
+    string filename;
     float t;
 };
 
@@ -49,4 +49,6 @@ public:
     
     string tsnePath;
     bool parsingSuccessful;
+    int nearestIndex = 0;
+    float nearestDistance = 0;
 };
